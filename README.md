@@ -9,3 +9,14 @@ Shared variables must be volatile.	We use volatile to prevent compiler optimizat
 
 
 gcc -O2 -Wall interrupt_sim.c -o interrupt_sim
+./interrupt_sim
+
+
+Interrupts:
+    SIGINT
+        ctrl+c in the ame terminal
+        It works for killing the process
+    SIGUSR1
+        kill -USR1 [PID] from another terminal
+    SIGALRM
+        Set inthe main code in the function setup_timer_interrupt
